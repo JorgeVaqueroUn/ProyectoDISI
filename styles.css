@@ -323,3 +323,27 @@ footer {
 }
 
 }
+
+  /* Estilos para contenedor de foto y descripción */
+  .foto-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 12px 0;
+  }
+  .foto-contenedor img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #444;
+    object-fit: cover;
+  }
+  .foto-descripcion {
+    font-size: 0.95rem;
+    color: #333;
+    max-width: 600px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .foto-descripcion { color: #ccc; }
+  }
