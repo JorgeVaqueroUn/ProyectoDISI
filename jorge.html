@@ -2,18 +2,26 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Presentación Jorge</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación Gabriel Güera Correa</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="wrapper">
-        <div class="nombre">Jorge Vaquero Sauceda</div>
+        <div class="nombre" style="font-weight: bold; font-size: 2em;">Página personal de Gabriel Güera Correa</div>
         <div class="box presentacion">
             <p>Estudiante de la Universidad de Extremadura.</p>
             <h2>Estudios</h2>
             <p>Actualmente estudiando Ingeniería Informática en la Universidad de Extremadura.</p>
         </div>
-        <img src="predeterminado.png" alt="Foto" width="200" id="foto"> 
+        <img src="imagenes/predeterminado.png" alt="imagenes/predeterminado.png" width="200" id="foto" style="border-radius: 50%; border: 2px solid black;">
+        <div class="box informacion-personal">
+            <h2>Información Personal</h2>
+            <p><strong>Nombre completo:</strong> Gabriel Güera Correa </p>
+            <p><strong>Universidad:</strong> Universidad de Extremadura</p>
+            <p><strong>Carrera:</strong> Ingeniería Informática</p>
+            <p><strong>Curso:</strong> Cuarto año </p>
+        </div>
 
         <div class="temas">
             <div class="box horario">
@@ -26,28 +34,28 @@
                     </tr>
                     <tr>
                         <td>Lunes</td>
-                        <td>10:00 - 12:00</td>
-                        <td>Clases</td>
+                        <td>17:00 - 21:00</td>
+                        <td>Horas libres</td>
                     </tr>
                     <tr>
                         <td>Martes</td>
-                        <td>14:00 - 16:00</td>
-                        <td>Laboratorio de DISI</td>
+                        <td>17:00 - 21:00</td>
+                        <td>Horas libres</td>
                     </tr>
                     <tr>
                         <td>Miércoles</td>
-                        <td>09:00 - 11:00</td>
-                        <td>Clases de Física</td>
+                        <td>17:00 - 21:00</td>
+                        <td>Horas libres</td>
                     </tr>
                     <tr>
                         <td>Jueves</td>
-                        <td>13:00 - 15:00</td>
-                        <td>Estudio en Biblioteca</td>
+                        <td>16:00 - 19:00</td>
+                        <td>Horas libres</td>
                     </tr>
                     <tr>
                         <td>Viernes</td>
-                        <td>11:00 - 13:00</td>
-                        <td>Reunión de Proyecto</td>
+                        <td>16:00 - 19:00</td>
+                        <td>Horas libres</td>
                     </tr>
                 </table>
             </div>
@@ -56,7 +64,7 @@
                 <form>
                     <label class="label" for="nombre">Nombre:</label><br>
                     <input class="input" type="text" id="nombre" name="nombre" required><br>
-                    <label class="label" for="Telefono">Teléfono:</label><br> 
+                    <label class="label" for="Telefono">Teléfono:</label><br>
                     <input class="input" type="tel" id="Telefono" name="Telefono" required><br>
                     <label class="label" for="email">Correo Electrónico:</label><br>
                     <input class="input" type="email" id="email" name="email" required><br>
@@ -66,19 +74,30 @@
                 </form>
             </div>
         </div>
+        
+        <div class="box intereses">
+            <h2>Intereses y Aficiones</h2>
+            <p>En mi tiempo libre, disfruto de varias actividades que me ayudan a relajarme y aprender cosas nuevas. Mis principales aficiones son:</p>
+            <ul>
+                <li>Voy a el gimnasio diariamente.</li>
+                <li>Salir con amigos a cenar, charlar o a tomar algo.</li>
+                <li>El mundo del motor es otra de las aficciones que disfruto.</li>
+            </ul>
+        </div>
+        
+        <div class="box redes-sociales">
+            <h2>Redes Sociales</h2>
+            <ul>
+                <li><a class="ref" href="https://www.instagram.com/gabrigc04_">Instagram</a></li>
+            </ul>
+        </div>
+
+        <div class="volver">
+            <a href="paginaPrincipal.html" class="box ref">Volver a la página principal</a>
+        </div>
     </div>
-    <div class="box redes-sociales">
-        <h2>Redes Sociales</h2>
-        <ul>
-            <li><a class="ref" href="https://www.instagram.com/jorgevs_12/">Instagram</a></li>
-        </ul>
-    </div>
-    <div class="volver">
-        <a href="paginaPrincipal.html" class="box ref">Volver a la página principal</a>
-    </div>
-    <footer> 
-        <address> El autor: Jorge Vaquero Sauceda <a class="box ref" href="mailto:jvaqueroeq@alumnos.unex.es"> jvaqueroeq</a> </address> 
+    <footer>
+        <address>El autor: Gabriel Güera Correa <a class="box ref" href="mailto:ggeracor@alumnos.unex.es">correo</a></address>
     </footer>
-    
 </body>
 </html>
