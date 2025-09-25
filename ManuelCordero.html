@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Presentación - Manuel Cordero Jaramillo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nombre" style="font-weight: bold; font-size: 2em;">Página personal de Manuel Cordero Jaramillo</div>
+        <div class="box presentacion">
+                <p>Estudiante de la Universidad de Extremadura.</p>
+                <h2>Estudios</h2>
+                <p>Actualmente estudiando Ingeniería Informática en la Universidad de Extremadura.</p>
+            </div>
+        <div class="foto-contenedor">
+            <img src="imagenes/imagenManuelCordero.jpg" alt="Foto de Manuel Cordero Jaramillo" id="foto">
+            <div class="foto-descripcion">Chico con pelo corto y negro, posando de frente</div>
+        </div>
+        <div class="box informacion-personal">
+            <h2>Información Personal</h2>
+            <p><strong>Nombre completo:</strong> Manuel Cordero Jaramillo</p>
+            <p><strong>Universidad:</strong> Universidad de Extremadura</p>
+            <p><strong>Carrera:</strong> Ingeniería Informática del Software</p>
+            <p><strong>Curso:</strong> Tercer año</p>
+        </div>
+
+        <div class="temas">
+            <div class="box horario">
+                <h2>Horario Semanal</h2>
+                <table class="tabla">
+                    <tr>
+                        <th>Día</th>
+                        <th>Hora</th>
+                        <th>Disponibilidad</th>
+                    </tr>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>11:30 - 20:00</td>
+                        <td>Libre</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>11:30 - 20:00</td>
+                        <td>Ocupado</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>15:30 - 20:00</td>
+                        <td>Libre</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>10:00 - 17:00</td>
+                        <td>Ocupado</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>11:00 - 12:00</td>
+                        <td>Libre</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="box contacto">
+                <h2>Contacto</h2>
+                <form>
+                    <label class="label" for="nombre">Nombre:</label><br>
+                    <input class="input" type="text" id="nombre" name="nombre" required><br>
+                    <label class="label" for="Telefono">Teléfono:</label><br>
+                    <input class="input" type="tel" id="Telefono" name="Telefono" required><br>
+                    <label class="label" for="email">Correo Electrónico:</label><br>
+                    <input class="input" type="email" id="email" name="email" required><br>
+                    <label class="label" for="mensaje">Mensaje:</label><br>
+                    <textarea class="textarea" name="mensaje" rows="4" cols="40" id="mensaje" required></textarea><br>
+                    <input type="submit" value="Enviar" class="enviar">
+                </form>
+            </div>
+        </div>
+        
+        <div class="box intereses">
+            <h2>Intereses y Aficiones</h2>
+            <p>Mis aficiones son la música, tanto producir como tocar instrumentos o escuchar música. Mi tiempo libre lo dedico a ello o a salir con los amigos. También tengo otras aficiones como:</p>
+            <ul>
+                <li>Ver/Practicar Deportes</li>
+                <li>Jugar videojuegos</li>
+                
+            </ul>
+        </div>
+        
+        <div class="box redes-sociales">
+            <h2>Medios de contacto</h2>
+            <ul>
+                <li><a class="ref" href="https://www.instagram.com/manucjaramillo_04/" target="_blank" rel="noopener noreferrer">Instagram: @manucjaramillo_04</a></li>
+                <li><a class="ref" href="mailto:mcorderoch@alumnos.unex.es">Correo: mcorderoch@alumnos.unex.es</a></li>
+            </ul>
+        </div>
+
+        <div class="volver">
+            <a href="paginaPrincipal.html" class="box ref">Volver a la página principal</a>
+        </div>
+    </div>
+    <footer>
+        <address>El autor: Manuel Cordero Jaramillo</address>
+    </footer>
+</body>
+</html>
