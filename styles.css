@@ -233,9 +233,13 @@ footer {
         height: auto;
     }
     .layout {
-  display: flex;
-}
-}
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-areas:
+    "informacion-personal"
+    "horario"
+    "contacto";
+  }
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #121212; /* fondo oscuro real */
