@@ -223,7 +223,7 @@ footer {
 }
 
 
-@media (max-width: 520px) {
+@media (max-width: 768px) {
     .cards {
         grid-template-columns: 1fr;
     }
@@ -233,10 +233,21 @@ footer {
         height: auto;
     }
     .layout {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "informacion-personal"
+      "horario"
+      "contacto";
+    gap: 20px;
   }
+
+  .contacto {
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #121212; /* fondo oscuro real */
