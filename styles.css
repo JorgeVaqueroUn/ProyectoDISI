@@ -421,3 +421,49 @@ textarea::placeholder {
   border: 2px solid #444;
   display: block;
 }
+
+/* Tooltip helpers for subject explanations */
+.has-tooltip { position: relative; display: inline-block; cursor: help; }
+.has-tooltip:focus { outline: none; }
+.has-tooltip:focus-visible { box-shadow: 0 0 0 3px rgba(0,123,255,0.22); border-radius: 4px; }
+.has-tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  top: 100%;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 120ms ease, transform 120ms ease;
+  z-index: 60;
+}
+.has-tooltip::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 4px);
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: rgba(0,0,0,0.85);
+  opacity: 0;
+  transition: opacity 120ms ease;
+  z-index: 59;
+}
+.has-tooltip:hover::after, .has-tooltip:focus::after, .has-tooltip:focus-visible::after,
+.has-tooltip:hover::before, .has-tooltip:focus::before, .has-tooltip:focus-visible::before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+@media (max-width: 480px) {
+  .has-tooltip::after, .has-tooltip::before { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .has-tooltip::after, .has-tooltip::before { transition: none; }
+}
