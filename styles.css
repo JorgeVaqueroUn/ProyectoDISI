@@ -5,6 +5,9 @@ body {
     background-color: #f0f0f0;
 }
 
+h1 {
+    text-align: center;
+}
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -30,7 +33,7 @@ body {
 }
 
 .layout .box {
-  margin:0; /* Solo margen inferior */
+  margin:0;
 }
 
 .layout {

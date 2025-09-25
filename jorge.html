@@ -24,39 +24,68 @@
                     <p><strong>Curso:</strong> Cuarto año </p>
             </div>
             <div class="box horario">
-                        <h2>Horario Semanal</h2>
-                        <table class="tabla">
-                            <tr>
-                                <th>Día</th>
-                                <th>Hora</th>
-                                <th>Actividad</th>
-                            </tr>
-                            <tr>
-                                <td>Lunes</td>
-                                <td>17:00 - 21:00</td>
-                                <td>Horas libres</td>
-                            </tr>
-                            <tr>
-                                <td>Martes</td>
-                                <td>17:00 - 21:00</td>
-                                <td>Horas libres</td>
-                            </tr>
-                            <tr>
-                                <td>Miércoles</td>
-                                <td>17:00 - 21:00</td>
-                                <td>Horas libres</td>
-                            </tr>
-                            <tr>
-                                <td>Jueves</td>
-                                <td>16:00 - 19:00</td>
-                                <td>Horas libres</td>
-                            </tr>
-                            <tr>
-                                <td>Viernes</td>
-                                <td>16:00 - 19:00</td>
-                                <td>Horas libres</td>
-                            </tr>
-                        </table>
+                <h2>Horario Semanal</h2>
+                <table class="tabla" aria-label="Horario semanal">
+                    <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Tc c3</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>09:00</td>
+                            <td></td>
+                            <td>Física c3</td>
+                            <td>Ali c1</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td></td>
+                            <td>Tc c3</td>
+                            <td title="Diseño e in">Disi c1</td>
+                            <td>Disi c1</td>
+                            <td>Disi c1</td>
+                        </tr>
+                        <tr>
+                            <td>11:00</td>
+                            <td rowspan="2">Lab Física 3<br><small>11:00–13:00</small></td>
+                            <td>Lab Ali 1 Novell<br><small>11:00–12:00</small></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12:00</td>
+                            <td></td>
+                            <td>Física c4<br><small>12:00–13:00</small></td>
+                            <td>Lab Disi 3 c2a<br><small>12:00–13:00</small></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>13:00</td>
+                            <td>Lab bd 2 Norba<br><small>13:00–14:00</small></td>
+                            <td></td>
+                            <td>Tc c4<br><small>13:00–14:00</small></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="box contacto">
                 <a href="#imagen-ampliada">
@@ -74,16 +103,16 @@
 
                 <h2>Contacto</h2>
                 <form>
-                    <label class="label" for="nombre">Nombre:</label><br>
+                    <label class="label" for="nombre">Nombre *:</label><br>
                     <input class="input" type="text" id="nombre" name="nombre" required placeholder="Ej: xxxxx"><br>
-                    <label class="label" for="Telefono">Teléfono:</label><br>
+                    <label class="label" for="Telefono">Teléfono *:</label><br>
                     <input class="input" type="tel" id="Telefono" name="Telefono" required placeholder="Ej: 123456789"
                     pattern="[0-9]{9}" title="Debe contener 9 dígitos numéricos"><br>
-                    <label class="label" for="email">Correo Electrónico:</label><br>
+                    <label class="label" for="email">Correo Electrónico *:</label><br>
                     <input class="input" type="email" id="email" name="email" required placeholder="Ej: xxxxx@yyy.com"><br>
-                    <label class="label" for="mensaje">Mensaje:</label><br>
+                    <label class="label" for="mensaje">Mensaje *:</label><br>
                     <textarea class="textarea" name="mensaje" rows="4" cols="40" id="mensaje" required placeholder="Introduce el texto que quieras"></textarea><br>
-                    <input type="submit" value="Enviar" class="enviar">
+                    <input type="submit" value="Enviar" class="enviar" >  <i class="material-icons">send</i>
                 </form>
             </div>
         </div>
