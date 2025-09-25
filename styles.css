@@ -233,12 +233,9 @@ footer {
         height: auto;
     }
     .layout {
-    display: grid;
-    grid-template-columns: 3fr;
-    grid-template-areas:
-    "informacion-personal"
-    "horario"
-    "contacto";
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
   }
 @media (prefers-color-scheme: dark) {
   body {
