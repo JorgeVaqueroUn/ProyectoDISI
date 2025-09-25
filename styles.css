@@ -232,6 +232,9 @@ footer {
         margin: 0 auto;
         height: auto;
     }
+    .layout {
+  display: flex;
+}
 }
 @media (prefers-color-scheme: dark) {
   body {
